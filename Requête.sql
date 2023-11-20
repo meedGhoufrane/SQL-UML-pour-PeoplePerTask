@@ -2,7 +2,7 @@ CREATE DATABASE PeoplePerTask
 USE PeoplePerTask
 
 CREATE TABLE users(
-idUser INT PRIMARY  AUTO_INCREMENT ,
+idUser INT PRIMARY  AUTO_INCREMENT,
 NAMEUser VARCHAR(10),
 passwoed VARCHAR(8),
 email VARCHAR(30),
@@ -37,7 +37,7 @@ idUser int  FOREIGN KEY
 CREATE TABLE Offres (
 IDOffres int PRIMARY KEY AUTO_INCREMENT,
 Montant float(10),
-Délai TIME ,
+Délai date ,
 IDFreelanceint  FOREIGN KEY
 idproject int  FOREIGN KEY
 );
@@ -60,7 +60,13 @@ INSERT  INTO  Projets VALUE ("title1","desc1",1,1,1);
 
 INSERT  INTO  Freelances VALUE ("youssef","Compétences1",2);
 
-INSERT  INTO  Offres VALUE (9999.1,20-11-2023,1,1);
+INSERT  INTO  Offres VALUE (9999.1,2023-01-15,1,1);
 
-INSERT  INTO   Témoignages VALUE ("Commentaire1",1);
+INSERT  INTO  Témoignages VALUE ("Commentaire1",1);
+
+
+
+-- UPDATE users
+-- SET NAMEUser = 'ahmed'
+-- WHERE idUser = 1;
 
